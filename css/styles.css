@@ -1,0 +1,185 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+ }
+
+
+/* estilos del html index */
+
+/* estilo del body */
+body {
+    background-image:url("../img/color.png") ;
+    font-family: 'Caveat', cursive;
+}
+
+/*estilos del header*/
+
+header { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+header h1 {
+    color: #eb4747;
+    text-align: left;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+
+header nav ul{
+    list-style:none;
+    color: #eb4747 ; 
+    text-align: right;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+
+header h4{
+        display: flex; 
+        text-align: center;
+        flex-direction: row;
+        column-gap: 10px;
+}
+
+/* Estilos del main*/
+
+main h2 {   
+    color: #eb4747 ; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+}
+
+main h2 p {   
+    color: #eb4747 ; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+
+main h3 { 
+    color: #eb4747 ; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;  }
+
+main div link {
+        color: #eb4747 ; 
+        align-items: center;
+        font-family: 'Caveat', cursive;
+        font-size: 25px; 
+    
+        }
+main h4 {
+        
+        color: #eb4747 ; 
+        align-items: center;
+        font-family: 'Caveat', cursive;
+        font-size: 25px; 
+}
+main h4 section table{
+        
+    color: #eb4747 ; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px; 
+}       
+main h5 {
+        color: #eb4747 ; 
+        font-family: 'Caveat', cursive;
+        font-size: 25px; 
+        display: flex; 
+        flex-direction: column;
+        column-gap: 10px;
+    }
+
+    main h5 p {
+        width: 100px;
+        height: 40px;
+        background-color: white;
+        margin: 1rem;
+    }
+
+    main h5 p div hijo-uno{
+       display: inline-block;
+       flex-direction: row;
+    }
+
+/*Estilos del section de productos*/
+ 
+
+section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section div img {
+    width: 20%;
+    animation-name: animacion;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+   /*Estilos del BT de Preguntas*/
+        .color-fondo {
+            background-color: rgb(252, 241, 244); 
+}
+   
+
+/* media queries */
+
+@media screen and (min-width: 480px){ 
+
+    body {
+        background-image:url("../img/color.png") 
+    }
+
+
+    header h1{
+        display: block;
+        display: flex;
+        justify-content: center;
+   }
+    
+    header nav ul{
+        transform: scale(0.9);
+        box-shadow: 2px 2px 3px pink;
+            }
+
+
+    main h5 p div {
+        display: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+/*Estilo del footer de todos los html*/
+footer {
+    background-color: white;
+    color: #eb4747;
+    text-align: center;
+   }
